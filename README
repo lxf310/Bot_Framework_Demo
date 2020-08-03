@@ -1,0 +1,8 @@
+# How to setup?
+
+1. Launch to [Azure portal](https://portal.azure.com/#home)
+2. Create a new app service.
+3. Create a new bot channels registration and keep a record of the bot id and bot password. Add the bot id and bot password to IdiotBot.Business.MockSecretVault.Vault in the source code.
+4. There are two ways to create a pair of bot id and bot password. The first one is to create them when creating the bot channels registration. The other one is to firstly create a app registration and generate a secret for this registration. And then set them to the bot channels registration when creating the bot channels registration.
+4. Go to Setting menu of the create bot channels registration and set message endpoint to the create app service plus /api/messages.
+5. Pulish IdiotBot.Api to the app service.
